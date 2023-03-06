@@ -1,0 +1,66 @@
+
+
+:root {
+   --primary-color: hsl(273, 88%, 51%);
+}
+
+body {
+   background-color: hsl(0, 3%, 7%);
+   font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+   background-color: var(--primary-color);
+   color: white;
+}
+
+.bg-primary {
+   background-color: var(--primary-color);
+}
+
+.text-primary {
+   color: var(--primary-color);
+}
+
+
+/* text animation */
+
+.wrapper-heading .text {
+   position: relative;
+}
+
+.wrapper-heading .sec-text .caret {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   border-left: 2px solid var(--primary-color);
+   animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+
+   40%, 60% {
+      left: calc(100% + 4px)
+   }
+
+   100% {
+      left: 0%;
+   }
+
+}
+
+.animate-icon {
+   animation: animate-icon 3s linear infinite;
+}
+
+@keyframes animate-icon {
+   from {
+      transform: rotate(0turn);
+   }
+   to {
+      transform: rotate(1turn);
+   }
+}

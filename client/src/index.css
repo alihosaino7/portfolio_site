@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+   html {
+      scroll-behavior: smooth;
+   }
+   
+}
+
+@layer components {
+
+   .container {
+      @apply sm:w-[540px] md:w-[750px] lg:w-[970px] xl:w-[1170px] 2xl:w-[1320px] mx-auto px-4
+   }
+
+}
